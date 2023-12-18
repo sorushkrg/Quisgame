@@ -1,0 +1,264 @@
+ Column(
+        children: [
+          Container(
+            width: double.infinity,
+            height: 500,
+            color: Color.fromRGBO(0, 34, 111, 10),
+            child: Center(
+                child: Container(
+              margin: EdgeInsets.only(left: 50, top: 30),
+              child: Text(
+                questions[index]["questions"],
+                style: const TextStyle(fontSize: 40),
+              ),
+            )),
+          ),
+          Expanded(
+            child: Container(
+              width: double.infinity,
+              height: 300,
+              color: Colors.black,
+              child: Column(
+                children: [
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // const SizedBox(
+                      //   width: 10,
+                      // ),
+                      SizedBox(
+                        width: 150,
+                        height: 50,
+                        child: ElevatedButton(
+                            style: ButtonStyle(
+                              backgroundColor: const MaterialStatePropertyAll(
+                                  Color.fromRGBO(0, 34, 111, 1)),
+                              shape: MaterialStatePropertyAll(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20))),
+                            ),
+                            onPressed: () {
+                              validate(0);
+                            },
+                            child: Text(questions[index]["options"][0])),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+
+                      SizedBox(
+                        width: 150,
+                        height: 50,
+                        child: ElevatedButton(
+                            style: ButtonStyle(
+                              backgroundColor: const MaterialStatePropertyAll(
+                                  Color.fromRGBO(0, 34, 111, 1)),
+                              shape: MaterialStatePropertyAll(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20))),
+                            ),
+                            onPressed: () {
+                              validate(0);
+                            },
+                            child: Text(questions[index]["options"][1])),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        width: 150,
+                        height: 50,
+                        child: ElevatedButton(
+                            style: ButtonStyle(
+                              backgroundColor: const MaterialStatePropertyAll(
+                                  Color.fromRGBO(0, 34, 111, 1)),
+                              shape: MaterialStatePropertyAll(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20))),
+                            ),
+                            onPressed: () {
+                              validate(0);
+                            },
+                            child: Text(questions[index]["options"][2])),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      SizedBox(
+                        width: 150,
+                        height: 50,
+                        child: ElevatedButton(
+                            style: ButtonStyle(
+                              backgroundColor: const MaterialStatePropertyAll(
+                                  Color.fromRGBO(0, 34, 111, 1)),
+                              shape: MaterialStatePropertyAll(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20))),
+                            ),
+                            onPressed: () {
+                              validate(0);
+                            },
+                            child: Text(questions[index]["options"][3])),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+
+
+
+
+      /////////////////////////////////////////////////////////
+
+
+
+
+
+
+{
+        "Level": "Level : 1",
+        "questions": "کدام درخت نماد صلح است؟",
+        "options": ["سرو", "زیتون", "سیب", "نارنج"],
+        "answer": 1
+      },
+      {
+        "Level": "Level : 2",
+        "questions": "واحد اندازه گیری الماس چیست؟",
+        "options": ["گرم", "پوند", "سوت", "قیراط"],
+        "answer": 3
+      },
+      {
+        "Level": "Level : 3",
+        "questions": "چند درصد بدن انسان را آب تشکیل می‌دهد؟",
+        "options": ["30 درصد", "40 درصد", "50 درصد", "60 درصد"],
+        "answer": 3
+      },
+      {
+        "Level": "Level : 4",
+        "questions": "پاریس کوچولو لقب کدام شهر ایران است؟",
+        "options": ["اصفهان", "بروجرد", "شیراز", "تبریز"],
+        "answer": 1
+      },
+      {
+        "Level": "Level : 5",
+        "questions": "تعداد اعضای مجلس شورای اسلامی؟",
+        "options": ["290", "350", "340", "285"],
+        "answer": 1
+      },
+      {
+        "Level": "Level : 6",
+        "questions": " شهر بهار نارنج لفب کدام شهر ایران است؟",
+        "options": ["بوشهر", "زاهدان", "بابل", "خوی"],
+        "answer": 2
+      },
+      {
+        "Level": "Level : 7",
+        "questions": " کدام حشره بیشترین طول عمر را دارد؟",
+        "options": ["موریانه", "ملخ", "مورچه", "عنکبوت"],
+        "answer": 0
+      },
+      {
+        "Level": "Level : 8",
+        "questions": "کدام مورد معادل مناسب تری برای واژه “کارنگ” است؟",
+        "options": ["سیاست مدار", "چرب زبان", "کارشناس", "آرامش دهنده"],
+        "answer": 1
+      },
+      {
+        "Level": "Level : 9",
+        "questions": "کدام حیوان در هنگام خواب یک چشم خود را باز نگه می‌دارد؟",
+        "options": ["شغال", "جغد", "روباه", "گرگ"],
+        "answer": 3
+      },
+      {
+        "Level": "Level : 10",
+        "questions": "عمیق‌ترین دریاچه جهان کدام است؟",
+        "options": ["خزر", "وان", "بایکال", "تی تی کالا"],
+        "answer": 2
+      },
+      {
+        "Level": "Level : 11",
+        "questions":
+            "در بمباران اتمی ژاپن توسط آمریکا، نام بمبی که بر روی شهر هیروشیما انداخته شد چه بود؟",
+        "options": ["مرد چاق", "مرد کوچک", "پسر چاق", "پسر کوچک"],
+        "answer": 3
+      },
+      {
+        "Level": "Level : 12",
+        "questions": "کوچک‌ترین واحد ساختمانی بدن انسان کدام است؟",
+        "options": ["سلول", "ژن", "مولکول", "عصب"],
+        "answer": 0
+      },
+      {
+        "Level": "Level : 13",
+        "questions": "داستان “مدیر مدرسه” اثر کیست؟",
+        "options": [
+          "بزرگ علوی",
+          "محمد علی جمال زاده",
+          "جلال آل احمد",
+          "سیمین دانشور"
+        ],
+        "answer": 2
+      },
+      {
+        "Level": "Level : 14",
+        "questions": "عمیق‌ترین نقطه خلیج فارس چند متر است؟",
+        "options": ["93 متر", "103 متر", "230 متر", "123 متر"],
+        "answer": 0
+      },
+      {
+        "Level": "Level : 15",
+        "questions": "در زمان کدام پادشاه، بحرین از خاک ایران جدا شد؟",
+        "options": [
+          "مظفرالیدن شاه",
+          "شاه اسماعیل",
+          "محمد رضا پهلوی",
+          "ناصرالدین شاه"
+        ],
+        "answer": 3
+      },
+      {
+        "Level": "Level : 16",
+        "questions": "کدام کشور سه زبان رسمی دارد؟",
+        "options": ["سنگاپور", "کانادا", "بلژیک", "سوییس"],
+        "answer": 2
+      },
+      {
+        "Level": "Level : 17",
+        "questions": "بریانی غذای معروف کدام شهر است؟",
+        "options": ["یزد", "اصفهان", "تبریز", "مشهد"],
+        "answer": 1
+      },
+      {
+        "Level": "Level : 18",
+        "questions": "به کدام یک عروس کوه‌های ایران می‌گویند؟",
+        "options": ["دنا", "سهند", "سبلان", "دماوند"],
+        "answer": 0
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
